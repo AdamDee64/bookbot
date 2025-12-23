@@ -1,6 +1,8 @@
 from stats import text_to_string, count_words, count_characters, sort_high_to_low
+import sys
 
-path = "books/frankenstein.txt"
+
+path = sys.argv[1]
 str = text_to_string(path)
 count = count_words(str)
 chars = count_characters(str)
